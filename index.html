@@ -25,22 +25,19 @@ html { scroll-behavior: smooth; }
 body { font-family: 'Source Sans 3', sans-serif; color: var(--text); background: var(--white); line-height: 1.7; font-size: 18px; }
 h1, h2, h3, h4 { font-family: 'Lora', serif; }
 
-/* NAV */
 nav { position: sticky; top: 0; z-index: 100; background: white; border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 70px; }
 .nav-logo { font-family: 'Lora', serif; font-size: 18px; font-weight: 600; color: var(--navy); }
 .nav-logo span { color: var(--magenta); }
 .nav-links { display: flex; gap: 2rem; align-items: center; }
-.nav-links a { font-size: 15px; color: var(--muted); text-decoration: none; font-weight: 600; letter-spacing: 0.3px; text-transform: uppercase; transition: color 0.2s; }
+.nav-links a { font-size: 15px; color: var(--muted); text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; transition: color 0.2s; }
 .nav-links a:hover { color: var(--navy); }
 .nav-cta { background: var(--magenta) !important; color: white !important; padding: 10px 22px; border-radius: 4px; font-size: 15px; font-weight: 600; text-transform: uppercase; transition: opacity 0.2s; }
 .nav-cta:hover { opacity: 0.88; }
 .nav-hamburger { display: none; background: none; border: none; cursor: pointer; font-size: 24px; color: var(--navy); }
 
-/* URGENCY */
 .urgency { background: var(--navy); color: white; padding: 1rem 2rem; text-align: center; font-size: 16px; line-height: 1.5; }
 .urgency strong { color: var(--amber); }
 
-/* HERO */
 .hero { background: var(--light-gray); padding: 6rem 2rem; }
 .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
 .hero-label { display: inline-block; background: var(--magenta); color: white; font-size: 13px; font-weight: 600; padding: 6px 16px; border-radius: 2px; margin-bottom: 1.5rem; letter-spacing: 1px; text-transform: uppercase; }
@@ -54,7 +51,6 @@ nav { position: sticky; top: 0; z-index: 100; background: white; border-bottom: 
 .btn-ghost { color: var(--navy); font-size: 16px; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
 .btn-ghost:hover { color: var(--magenta); }
 
-/* HERO STATS */
 .hero-stats { background: white; border: 1px solid var(--border); padding: 2rem; }
 .hero-stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 1.5rem; }
 .hero-stat { padding: 1.75rem 1.25rem; border-right: 1px solid var(--border); }
@@ -67,15 +63,14 @@ nav { position: sticky; top: 0; z-index: 100; background: white; border-bottom: 
 .hero-stat-label { font-size: 14px; color: var(--muted); margin-top: 8px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; }
 .hero-tag { display: flex; align-items: center; gap: 8px; background: var(--teal-light); color: var(--teal); font-size: 15px; font-weight: 600; padding: 12px 16px; }
 
-/* STATS BAND */
-.stats-band { background: var(--navy); padding: 4rem 2rem; }
+.stats-band { background: var(--navy); padding: 5rem 2rem; }
 .stats-band-inner { max-width: 1100px; margin: 0 auto; }
 .stats-band-label { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--amber); margin-bottom: 0.5rem; }
 .stats-band-heading { font-family: 'Lora', serif; font-size: 2rem; color: white; font-weight: 600; margin-bottom: 3rem; line-height: 1.3; }
-.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid rgba(255,255,255,0.1); }
-.stat-box { padding: 2.5rem 2rem; border-right: 1px solid rgba(255,255,255,0.1); position: relative; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid rgba(255,255,255,0.12); }
+.stat-box { padding: 2.5rem 2rem; border-right: 1px solid rgba(255,255,255,0.12); position: relative; }
 .stat-box:last-child { border-right: none; }
-.stat-sq { width: 30px; height: 30px; position: absolute; top: 2rem; right: 2rem; opacity: 0.6; }
+.stat-sq { width: 28px; height: 28px; position: absolute; top: 2rem; right: 2rem; opacity: 0.6; }
 .sq-m { background: var(--magenta); }
 .sq-a { background: var(--amber); }
 .sq-t { background: var(--teal); }
@@ -83,7 +78,6 @@ nav { position: sticky; top: 0; z-index: 100; background: white; border-bottom: 
 .stat-box-num { font-family: 'Lora', serif; font-size: 3.2rem; font-weight: 600; color: white; line-height: 1; margin-bottom: 0.75rem; }
 .stat-box-desc { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.5; }
 
-/* WHY */
 .why-section { padding: 6rem 2rem; background: var(--white); }
 .why-inner { max-width: 1100px; margin: 0 auto; }
 .section-label { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--magenta); margin-bottom: 0.75rem; }
@@ -97,17 +91,17 @@ h2 { font-size: 2.5rem; font-weight: 600; color: var(--navy); line-height: 1.2; 
 .callout p { font-size: 17px; color: rgba(255,255,255,0.85); line-height: 1.75; }
 .callout strong { color: var(--amber); }
 
-/* HOW */
-.how-section { background: var(--light-gray); padding: 6rem 2rem; }
+.how-section { background: var(--navy); padding: 6rem 2rem; }
 .how-inner { max-width: 1100px; margin: 0 auto; }
-.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3rem; }
-.step { position: relative; }
-.step-num { width: 52px; height: 52px; background: var(--magenta); color: white; display: flex; align-items: center; justify-content: center; font-family: 'Lora', serif; font-size: 22px; font-weight: 600; margin-bottom: 1.25rem; }
-.step h4 { font-size: 18px; color: var(--navy); margin-bottom: 0.75rem; font-weight: 600; }
-.step p { font-size: 16px; color: var(--muted); line-height: 1.7; }
-.step-arrow { position: absolute; right: -1rem; top: 1.5rem; color: var(--border); font-size: 22px; }
+.how-section .section-label { color: var(--amber); }
+.how-section h2 { color: white; }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 3rem; border: 1px solid rgba(255,255,255,0.12); }
+.step { padding: 2.5rem 2rem; border-right: 1px solid rgba(255,255,255,0.12); }
+.step:last-child { border-right: none; }
+.step-num { font-family: 'Lora', serif; font-size: 13px; font-weight: 600; color: var(--amber); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; }
+.step h4 { font-size: 18px; color: white; margin-bottom: 0.75rem; font-weight: 600; }
+.step p { font-size: 16px; color: rgba(255,255,255,0.65); line-height: 1.7; }
 
-/* GIVING */
 .giving-section { background: white; padding: 6rem 2rem; }
 .giving-inner { max-width: 1100px; margin: 0 auto; }
 .giving-intro { max-width: 650px; margin-bottom: 3.5rem; }
@@ -129,7 +123,6 @@ h2 { font-size: 2.5rem; font-weight: 600; color: var(--navy); line-height: 1.2; 
 .giving-note { font-size: 16px; color: var(--muted); text-align: center; margin-top: 2rem; }
 .giving-note a { color: var(--magenta); text-decoration: none; font-weight: 600; }
 
-/* STORY */
 .story-section { background: var(--light-gray); padding: 6rem 2rem; }
 .story-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
 .story-content h2 { margin-bottom: 1.5rem; }
@@ -144,13 +137,11 @@ h2 { font-size: 2.5rem; font-weight: 600; color: var(--navy); line-height: 1.2; 
 .story-stat-num { font-family: 'Lora', serif; font-size: 2.8rem; font-weight: 600; color: white; line-height: 1; }
 .story-stat-label { font-size: 15px; color: rgba(255,255,255,0.65); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-top: 6px; line-height: 1.4; }
 
-/* PARTNERS */
 .partners-section { background: white; padding: 3rem 2rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .partners-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 3rem; flex-wrap: wrap; }
 .partners-label { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); white-space: nowrap; }
 .partner-pill { border: 1px solid var(--border); padding: 10px 20px; font-size: 16px; color: var(--muted); }
 
-/* FAQ */
 .faq-section { background: var(--light-gray); padding: 6rem 2rem; }
 .faq-inner { max-width: 800px; margin: 0 auto; }
 .faq-inner h2 { margin-bottom: 2.5rem; }
@@ -160,7 +151,6 @@ h2 { font-size: 2.5rem; font-weight: 600; color: var(--navy); line-height: 1.2; 
 .faq-a { font-size: 17px; color: var(--muted); line-height: 1.75; padding: 0 2rem 1.5rem; display: none; }
 .faq-a.open { display: block; }
 
-/* FOOTER */
 footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
 .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 3rem; }
 .footer-brand { font-family: 'Lora', serif; font-size: 20px; font-weight: 600; color: white; margin-bottom: 1rem; }
@@ -171,7 +161,6 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
 .footer-col a:hover { color: white; }
 .footer-bottom { max-width: 1100px; margin: 0 auto; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; font-size: 15px; color: rgba(255,255,255,0.35); flex-wrap: wrap; gap: 0.5rem; }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .nav-links { display: none; }
   .nav-hamburger { display: block; }
@@ -180,11 +169,11 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
   h2 { font-size: 2rem; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .stat-box:nth-child(2) { border-right: none; }
-  .stat-box:nth-child(3) { border-right: 1px solid rgba(255,255,255,0.1); border-top: 1px solid rgba(255,255,255,0.1); }
-  .stat-box:nth-child(4) { border-right: none; border-top: 1px solid rgba(255,255,255,0.1); }
+  .stat-box:nth-child(3) { border-right: 1px solid rgba(255,255,255,0.12); border-top: 1px solid rgba(255,255,255,0.12); }
+  .stat-box:nth-child(4) { border-right: none; border-top: 1px solid rgba(255,255,255,0.12); }
   .why-grid { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr 1fr; }
-  .step-arrow { display: none; }
+  .step { border-bottom: 1px solid rgba(255,255,255,0.12); }
   .tiers { grid-template-columns: 1fr 1fr; }
   .footer-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero, .why-section, .how-section, .giving-section, .story-section, .faq-section, .stats-band { padding-left: 1.5rem; padding-right: 1.5rem; }
@@ -248,7 +237,7 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
           </div>
         </div>
         <div class="hero-tag">
-          📅 July 2026 – June 2027 &middot; Bandra to Talasari, Maharashtra
+          &#128197; July 2026 – June 2027 &middot; Bandra to Talasari, Maharashtra
         </div>
       </div>
     </div>
@@ -290,24 +279,24 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
     <h2>HPV vaccination is our most powerful tool against cervical cancer</h2>
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-icon">💉</div>
+        <div class="why-icon">&#128137;</div>
         <h3>Vaccination prevents cervical cancer</h3>
         <p>The HPV vaccine protects against the strains responsible for over 80% of cervical cancer cases in India. Administered before exposure to the virus, it provides strong, proven protection against this deadly disease.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">⏰</div>
+        <div class="why-icon">&#9200;</div>
         <h3>Ages 9–14 is the optimal window</h3>
         <p>WHO and NTAGI recommend ages 9–14 as the ideal time to vaccinate. Girls in this age group mount a stronger immune response — meaning the earlier we vaccinate, the stronger the protection.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">📍</div>
+        <div class="why-icon">&#128205;</div>
         <h3>We bring the vaccine to them</h3>
         <p>Girls in underserved communities along the Bandra to Talasari corridor face real barriers to preventive healthcare. We bring vaccination directly to their communities — no travel required.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">🤝</div>
-        <h3>Complementing the government's effort</h3>
-        <p>India's national HPV campaign is underway and we are proud to extend its reach. The current rollout focuses on 14-year-olds. We are extending reach to girls aged 9–14 in underserved communities.</p>
+        <div class="why-icon">&#129309;</div>
+        <h3>Extending the government's effort</h3>
+        <p>India's national HPV campaign is underway and we are proud to extend its reach. We are bringing last-mile delivery to underserved communities across Maharashtra as part of this national movement.</p>
       </div>
     </div>
   </div>
@@ -319,25 +308,22 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
     <h2>How we deliver vaccination to those who need it most</h2>
     <div class="steps">
       <div class="step">
-        <div class="step-num">1</div>
+        <div class="step-num">Step 01</div>
         <h4>Identify high-need communities</h4>
         <p>Map underserved communities with limited access to preventive healthcare across the Bandra to Talasari corridor</p>
-        <div class="step-arrow">&rarr;</div>
       </div>
       <div class="step">
-        <div class="step-num">2</div>
+        <div class="step-num">Step 02</div>
         <h4>Consent &amp; readiness</h4>
         <p>Parental consent collected in Marathi. Pre-vaccination counselling by qualified medical teams on site</p>
-        <div class="step-arrow">&rarr;</div>
       </div>
       <div class="step">
-        <div class="step-num">3</div>
+        <div class="step-num">Step 03</div>
         <h4>Vaccination camp</h4>
         <p>Licensed doctors administer Gardasil by Merck — the same vaccine used in India's national programme — with full medical oversight</p>
-        <div class="step-arrow">&rarr;</div>
       </div>
       <div class="step">
-        <div class="step-num">4</div>
+        <div class="step-num">Step 04</div>
         <h4>Track &amp; follow up</h4>
         <p>Full documentation and post-vaccination observation to ensure every girl completes her vaccination schedule</p>
       </div>
@@ -438,7 +424,7 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
     </div>
     <div class="faq-item" onclick="toggleFaq(this)">
       <div class="faq-q">How does this relate to the government's campaign? <span class="faq-toggle">+</span></div>
-      <div class="faq-a">India's national HPV campaign launched February 28, 2026 and Maharashtra's drive began March 8. Both currently focus on 14-year-olds at government facilities. Our initiative complements this by extending reach to girls aged 9–14 in underserved communities.</div>
+      <div class="faq-a">India's national HPV campaign launched February 28, 2026 and Maharashtra's drive began March 8. Our initiative complements and extends this effort by bringing last-mile delivery to underserved communities across Maharashtra.</div>
     </div>
     <div class="faq-item" onclick="toggleFaq(this)">
       <div class="faq-q">Can I donate from the US? <span class="faq-toggle">+</span></div>
