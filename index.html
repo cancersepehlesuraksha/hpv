@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,6 +108,46 @@ h2 { font-size: 2.5rem; font-weight: 600; color: var(--navy); line-height: 1.2; 
 .step h4 { font-size: 18px; color: white; margin-bottom: 0.75rem; font-weight: 600; }
 .step p { font-size: 16px; color: rgba(255,255,255,0.65); line-height: 1.7; }
 
+/* ── CAMPS SECTION ── */
+.camps-section { background: var(--white); padding: 6rem 2rem; }
+.camps-inner { max-width: 1100px; margin: 0 auto; }
+.camps-tabs { display: flex; gap: 0; margin-bottom: 2.5rem; border-bottom: 2px solid var(--border); }
+.camp-tab { padding: 0.75rem 1.75rem; font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.2s; background: none; border-left: none; border-right: none; border-top: none; }
+.camp-tab.active { color: var(--magenta); border-bottom-color: var(--magenta); }
+.camp-tab:hover { color: var(--navy); }
+.camp-panel { display: none; }
+.camp-panel.active { display: block; }
+.camp-meta { display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+.camp-meta-item { display: flex; align-items: center; gap: 0.5rem; font-size: 15px; color: var(--muted); font-weight: 600; }
+.camp-meta-item span.label { text-transform: uppercase; letter-spacing: 0.5px; font-size: 12px; color: var(--muted); font-weight: 600; }
+.camp-meta-item span.val { color: var(--navy); font-size: 16px; }
+.camp-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--teal-light); color: var(--teal); font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+.photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.photo-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; background: var(--light-gray); }
+.photo-grid img:hover { opacity: 0.92; transition: opacity 0.2s; }
+.photo-grid-4 { grid-template-columns: repeat(4, 1fr); }
+.camp-pilot-note { background: var(--light-gray); padding: 3rem; display: flex; gap: 2rem; align-items: flex-start; }
+.camp-pilot-icon { font-size: 3rem; flex-shrink: 0; opacity: 0.4; }
+.camp-pilot-note p { font-size: 18px; color: var(--muted); line-height: 1.8; font-style: italic; }
+
+/* ── NEWS SECTION ── */
+.news-section { background: var(--light-gray); padding: 6rem 2rem; }
+.news-inner { max-width: 1100px; margin: 0 auto; }
+.news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin-top: 3rem; }
+.news-card { background: white; border: 1px solid var(--border); overflow: hidden; }
+.news-card-img { width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: top; display: block; background: var(--light-gray); }
+.news-card-body { padding: 2rem; }
+.news-source { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--magenta); margin-bottom: 0.5rem; }
+.news-card h3 { font-size: 20px; color: var(--navy); font-weight: 600; margin-bottom: 0.75rem; line-height: 1.35; }
+.news-card p { font-size: 16px; color: var(--muted); line-height: 1.7; }
+.news-date { font-size: 13px; color: var(--muted); margin-top: 1rem; font-weight: 600; }
+.news-highlight { background: var(--navy); padding: 2.5rem; display: flex; flex-direction: column; gap: 1.75rem; justify-content: center; }
+.news-quote { font-family: 'Lora', serif; font-size: 1.35rem; color: white; line-height: 1.6; font-style: italic; }
+.news-quote-attr { font-size: 14px; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; }
+.news-detail { border-left: 3px solid var(--amber); padding-left: 1.25rem; }
+.news-detail-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--amber); font-weight: 600; margin-bottom: 0.3rem; }
+.news-detail-val { font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.5; }
+
 .giving-section { background: white; padding: 6rem 2rem; }
 .giving-inner { max-width: 1100px; margin: 0 auto; }
 .giving-intro { max-width: 650px; margin-bottom: 3.5rem; }
@@ -183,7 +222,9 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
   .step { border-bottom: 1px solid rgba(255,255,255,0.12); }
   .tiers { grid-template-columns: 1fr 1fr; }
   .footer-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .hero, .why-section, .how-section, .giving-section, .story-section, .faq-section, .stats-band { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .hero, .why-section, .how-section, .giving-section, .story-section, .faq-section, .stats-band, .camps-section, .news-section { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .news-grid { grid-template-columns: 1fr; }
+  .photo-grid, .photo-grid-4 { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
   .tiers { grid-template-columns: 1fr; }
@@ -191,6 +232,7 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
   .hero-stats-grid { grid-template-columns: 1fr; }
   .hero-stat { border-right: none; border-bottom: 1px solid var(--border); }
   .hero-stat:last-child { border-bottom: none; }
+  .photo-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -201,6 +243,7 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
   <div class="nav-links">
     <a href="#why">Why This</a>
     <a href="#how">How It Works</a>
+    <a href="#camps">Our Camps</a>
     <a href="#give">Give</a>
     <a href="#story">Our Story</a>
     <a class="nav-cta" href="#give">Donate Now</a>
@@ -209,7 +252,7 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
 </nav>
 
 <div class="urgency">
-  <strong>We've started! Our first girls have been vaccinated in Maharashtra.</strong> Help us reach 3,000 more.
+  <strong>250 girls vaccinated and counting.</strong> We're 8% of the way to our goal of 3,000 — every dollar closes the gap. <a href="#give" style="color:var(--amber); font-weight:700; text-decoration:none;">Give now &rarr;</a>
 </div>
 
 <section class="hero">
@@ -249,12 +292,12 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
         <div class="progress-block">
           <div class="progress-label-row">
             <span class="ptitle">Girls Vaccinated So Far</span>
-            <span class="pcount">12 / 3,000</span>
+            <span class="pcount">250 / 3,000</span>
           </div>
           <div class="progress-track">
-            <div class="progress-fill" style="width: 4%;"></div>
+            <div class="progress-fill" style="width: 8%;"></div>
           </div>
-          <div class="progress-footnote">We've begun! Camps are underway across Maharashtra.</div>
+          <div class="progress-footnote">&#10003; 250 girls protected across two camps — with 2,750 still to reach.</div>
         </div>
       </div>
     </div>
@@ -348,6 +391,147 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
   </div>
 </section>
 
+<!-- ── CAMPS SECTION ── -->
+<section class="camps-section" id="camps">
+  <div class="camps-inner">
+    <div class="section-label">From the Field</div>
+    <h2>Our vaccination camps</h2>
+    <div class="camps-tabs">
+      <button class="camp-tab active" onclick="showCamp('oct17', this)">Oct 17</button>
+      <button class="camp-tab" onclick="showCamp('oct7', this)">Oct 7</button>
+      <button class="camp-tab" onclick="showCamp('sept10', this)">Sept 10</button>
+      <button class="camp-tab" onclick="showCamp('aug20', this)">Aug 20</button>
+      <button class="camp-tab" onclick="showCamp('jul18', this)">Jul 18</button>
+      <button class="camp-tab" onclick="showCamp('pilot', this)">Jul 2026 — Pilot</button>
+    </div>
+
+    <div class="camp-panel active" id="panel-oct17">
+      <div class="camp-meta">
+        <div class="camp-meta-item"><span class="label">Date</span>&nbsp;<span class="val">October 17, 2026</span></div>
+        <div class="camp-meta-item"><span class="label">Venue</span>&nbsp;<span class="val">St. Aloysius Girls High School, Papdy, Vasai West</span></div>
+        <div class="camp-meta-item"><span class="label">Girls vaccinated</span>&nbsp;<span class="val">45</span></div>
+        <div class="camp-badge">&#10003; Completed</div>
+      </div>
+      <div class="photo-grid">
+        <img src="https://lh3.googleusercontent.com/d/1qr8OC2b8CUtD-IZlHFO1nXzhpj6CoViB" alt="October 17 camp — St. Aloysius Girls High School, Vasai West" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/d/1E_e3dTaKIeEY8GIRc4Qqk6OwAjk6UOb9" alt="October 17 camp — vaccination session" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/d/1GxbIsdcYa2hKM3RDzmqqP-RwY75Cugc_" alt="October 17 camp — community outreach" loading="lazy">
+      </div>
+    </div>
+
+    <div class="camp-panel" id="panel-oct7">
+      <div class="camp-meta">
+        <div class="camp-meta-item"><span class="label">Date</span>&nbsp;<span class="val">October 7, 2026</span></div>
+        <div class="camp-meta-item"><span class="label">Venue</span>&nbsp;<span class="val">New English School, Vasai Gaon</span></div>
+        <div class="camp-meta-item"><span class="label">Girls vaccinated</span>&nbsp;<span class="val">80</span></div>
+        <div class="camp-badge">&#10003; Completed</div>
+      </div>
+      <div class="photo-grid">
+        <img src="https://lh3.googleusercontent.com/d/11DN2gdisy2TElPnoKp-JLMvQylrQVyat" alt="October 7 camp — New English School, Vasai Gaon" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/d/1salF01WjBDvQ-OO-Yfbzq0V0szlo9cuk" alt="October 7 camp — vaccination session" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/d/1vgPv9d1Kajx_Zy8kJgO4N6r5hNCixUeV" alt="October 7 camp — community participation" loading="lazy">
+      </div>
+    </div>
+
+    <div class="camp-panel" id="panel-sept10">
+      <div class="camp-meta">
+        <div class="camp-meta-item"><span class="label">Date</span>&nbsp;<span class="val">September 10, 2026</span></div>
+        <div class="camp-meta-item"><span class="label">Venue</span>&nbsp;<span class="val">Abhinav Vidyalaya, Virthan Budruk, Saphale</span></div>
+        <div class="camp-meta-item"><span class="label">Girls vaccinated</span>&nbsp;<span class="val">30</span></div>
+        <div class="camp-badge">&#10003; Completed</div>
+      </div>
+      <div class="photo-grid">
+        <img src="https://lh3.googleusercontent.com/d/141DhFUlewSqkGLm2GWTkT8hXZSbU76HD" alt="September 10 camp — Abhinav Vidyalaya, Saphale" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/d/1__TLy_lhK61n2WnYZ7f7t6zcx6Fa5LK2" alt="September 10 camp — vaccination session" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/d/1QyjAI0iII0716_H136O3fvSCOvvFaZ0u" alt="September 10 camp — community participation" loading="lazy">
+      </div>
+    </div>
+
+    <div class="camp-panel" id="panel-aug20">
+      <div class="camp-meta">
+        <div class="camp-meta-item"><span class="label">Date</span>&nbsp;<span class="val">August 20, 2026</span></div>
+        <div class="camp-meta-item"><span class="label">Venue</span>&nbsp;<span class="val">St. Aloysius Girls High School, Papdy, Vasai West</span></div>
+        <div class="camp-meta-item"><span class="label">Girls vaccinated</span>&nbsp;<span class="val">25</span></div>
+        <div class="camp-badge">&#10003; Completed</div>
+      </div>
+      <div class="photo-grid">
+        <img src="https://lh3.googleusercontent.com/d/1zNZu8hOkjX7ivCIbGOSNChVfkdL2Wwcy" alt="August 20 camp — St. Aloysius Girls High School, Vasai West" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/d/1BPKfMV9kjycMY9tFP-0FKPV6FaFzGeLg" alt="August 20 camp — vaccination session" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/d/1ZmTzsE8JggyfbLlt9aK1XeW3leWOEsdk" alt="August 20 camp — community outreach" loading="lazy">
+      </div>
+    </div>
+
+    <div class="camp-panel" id="panel-jul18">
+      <div class="camp-meta">
+        <div class="camp-meta-item"><span class="label">Date</span>&nbsp;<span class="val">July 18, 2026</span></div>
+        <div class="camp-meta-item"><span class="label">Venue</span>&nbsp;<span class="val">Guru Harkrishan High School &amp; Junior College of Commerce</span></div>
+        <div class="camp-meta-item"><span class="label">Girls vaccinated</span>&nbsp;<span class="val">50</span></div>
+        <div class="camp-badge">&#127381; Inaugural Camp</div>
+      </div>
+      <div class="photo-grid photo-grid-4">
+        <img src="https://lh3.googleusercontent.com/d/1DSM-G6EuQwKZyfbtcwcJPkOt-x-awxhU" alt="July 18 inaugural camp — inauguration by Lion Tony Benbow" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/d/1KXT4GaZLBRxwI-DI4-SeGihM7kgdMwYO" alt="July 18 camp — HPV vaccination drive inauguration" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/d/1eZWGerYUWV_qKumdp25swHGIEdGmen8q" alt="July 18 camp — vaccination session" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/d/1i_8O6F4Bg5e7Rqk027660cN3iINCSzM_" alt="July 18 camp — community participation" loading="lazy">
+      </div>
+    </div>
+
+    <div class="camp-panel" id="panel-pilot">
+      <div class="camp-meta">
+        <div class="camp-meta-item"><span class="label">Date</span>&nbsp;<span class="val">Early July 2026</span></div>
+        <div class="camp-meta-item"><span class="label">Venue</span>&nbsp;<span class="val">M.G. Parulekar School, Vasai</span></div>
+        <div class="camp-meta-item"><span class="label">Girls vaccinated</span>&nbsp;<span class="val">20</span></div>
+        <div class="camp-badge">&#10003; Completed</div>
+      </div>
+      <div class="camp-pilot-note">
+        <div class="camp-pilot-icon">&#128247;</div>
+        <p>Our very first camp — 20 girls vaccinated at M.G. Parulekar School in Vasai. This pilot proved that our model worked: parental consent in Marathi, licensed doctors on site, cold chain intact. Everything that followed was built on what we learned here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── IN THE NEWS ── -->
+<section class="news-section" id="news">
+  <div class="news-inner">
+    <div class="section-label">In the News</div>
+    <h2>Coverage of our inaugural camp</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <img class="news-card-img" src="/WhatsApp_Image_2026-07-26_at_10_52_56_AM.jpeg" alt="Hindustan Times coverage — Inauguration of HPV vaccination drive for girls">
+        <div class="news-card-body">
+          <div class="news-source">Hindustan Times</div>
+          <h3>Inauguration of HPV vaccination drive for girls</h3>
+          <p>Our inaugural vaccination camp at Guru Harkrishan High School &amp; Junior College of Commerce was covered by the Hindustan Times — highlighting the role of the Lions Club in bringing free HPV vaccination to underserved communities across Maharashtra.</p>
+          <div class="news-date">July 26, 2026</div>
+        </div>
+      </div>
+      <div class="news-highlight">
+        <div>
+          <div class="news-quote">"Free immunization against cervical cancer — bringing the HPV vaccine to girls who need it most."</div>
+          <div class="news-quote-attr">Hindustan Times, July 2026</div>
+        </div>
+        <div class="news-detail">
+          <div class="news-detail-label">Inaugural camp</div>
+          <div class="news-detail-val">Guru Harkrishan High School &amp; Junior College of Commerce, July 18, 2026</div>
+        </div>
+        <div class="news-detail">
+          <div class="news-detail-label">Inaugurated by</div>
+          <div class="news-detail-val">Lion Tony Benbow, International Second Vice President, Lions Clubs International</div>
+        </div>
+        <div class="news-detail">
+          <div class="news-detail-label">HPV Vaccine Coordinator</div>
+          <div class="news-detail-val">Leo Darshana Banka</div>
+        </div>
+        <div class="news-detail">
+          <div class="news-detail-label">Lead Donor</div>
+          <div class="news-detail-val">Lion Sam Kaya</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="giving-section" id="give">
   <div class="giving-inner">
     <div class="giving-intro">
@@ -405,8 +589,12 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
     </div>
     <div class="story-visual">
       <div class="story-stat">
+        <div class="story-stat-num">250</div>
+        <div class="story-stat-label">Girls vaccinated — and counting</div>
+      </div>
+      <div class="story-stat">
         <div class="story-stat-num">3,000</div>
-        <div class="story-stat-label">Girls we aim to protect</div>
+        <div class="story-stat-label">Our goal for 2026–27</div>
       </div>
       <div class="story-stat">
         <div class="story-stat-num">1 in 4</div>
@@ -416,10 +604,6 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
         <div class="story-stat-num">93–100%</div>
         <div class="story-stat-label">Vaccine efficacy against covered HPV types</div>
       </div>
-      <div class="story-stat">
-        <div class="story-stat-num">9–14</div>
-        <div class="story-stat-label">Optimal age for strongest immune response</div>
-      </div>
     </div>
   </div>
 </section>
@@ -428,6 +612,8 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
   <div class="partners-inner">
     <div class="partners-label">In partnership with</div>
     <div class="partner-pill">Lions International District 3231 A3</div>
+    <div class="partner-pill">Jivika Foundation</div>
+    <div class="partner-pill">MOCF</div>
   </div>
 </div>
 
@@ -472,6 +658,8 @@ footer { background: var(--navy); color: white; padding: 5rem 2rem 2.5rem; }
       <h4>Navigate</h4>
       <a href="#why">Why this</a>
       <a href="#how">How it works</a>
+      <a href="#camps">Our camps</a>
+      <a href="#news">In the news</a>
       <a href="#give">Give</a>
       <a href="#story">Our story</a>
     </div>
@@ -494,7 +682,7 @@ function toggleFaq(el) {
   var isOpen = a.classList.contains('open');
   document.querySelectorAll('.faq-a').forEach(function(x) { x.classList.remove('open'); });
   document.querySelectorAll('.faq-toggle').forEach(function(x) { x.textContent = '+'; });
-  if (!isOpen) { a.classList.add('open'); t.textContent = '\u2212'; }
+  if (!isOpen) { a.classList.add('open'); t.textContent = '−'; }
 }
 function toggleMenu() {
   var links = document.querySelector('.nav-links');
@@ -513,6 +701,12 @@ function toggleMenu() {
     links.style.gap = '1.25rem';
     links.style.zIndex = '99';
   }
+}
+function showCamp(id, btn) {
+  document.querySelectorAll('.camp-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.querySelectorAll('.camp-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.getElementById('panel-' + id).classList.add('active');
+  btn.classList.add('active');
 }
 </script>
 </body>
